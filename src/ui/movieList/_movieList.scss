@@ -1,0 +1,30 @@
+.movieList__content {
+  width: 100%;
+}
+
+.movieListItem {
+  background-color: #20242b;
+  &:nth-child(even) {
+    background-color: #464e5d;
+  }
+}
+.movieListItem__content {
+  margin: 0 10px;
+}
+
+.movieList__header {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.movieListItem__title {
+  text-transform: capitalize;
+}
+
+.movieListItem__ratingBox {
+  border: #000 1px solid;
+  padding: 5px;
+  font-size: 10px;
+  display: inline-block;
+  margin-left: 10px;
+}

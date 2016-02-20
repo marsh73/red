@@ -1,0 +1,30 @@
+.stack.appContainer
+
+  search-bar(
+    search-input="movieListCtrl.searchInput"
+  )
+  banner-ad
+  .appContent.stretch
+    .movieList__content.stack
+      .shelf.spread.movieList__header
+        .movieList__headerItem
+          | ShowTimes
+        .text-right.movieList__headerItem
+          | {{movieListCtrl.date}}
+
+      ul.list-group
+        li.list-group-item.movieListItem.clickable.shelf.flex-center(
+          ng-repeat="movie in movieListCtrl.movieList | filter: movieListCtrl.searchInput"
+          ng-click="movieListCtrl.openDetail(movie.id)"
+          )
+              i.glyphicon.glyphicon-heart
+              .movieListItem__content.stretch.stack
+                .movieListItem__title {{ movie.title }}
+                  .movieListItem__ratingBox {{movie.rating}}
+                .movieListItem__times {{movie.showTimes | showTimes}}
+
+
+              i.glyphicon.glyphicon-menu-right
+
+
+  footer footer

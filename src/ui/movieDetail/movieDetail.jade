@@ -1,0 +1,16 @@
+.stack.appContainer.movieDetail__container
+  .shelf.flex-end
+    .movieDetail__button--close(ng-click="movieDetailCtrl.close()")
+      | close
+      i.glyphicon.glyphicon-remove
+
+  h2.movieDetail__title {{movieDetailCtrl.movie.title}}
+  .movieDetail__content.stretch
+    image.movieDetail--poster(ng-src="{{movieDetailCtrl.movie.image}}")
+    .movieDetail__rating Rating
+      .movieDetail__ratingBox {{movieDetailCtrl.movie.rating}}
+    p.movieDetail--description {{movieDetailCtrl.movie.description}}
+
+  .footer.shelf.spread
+    button watch
+    button buy

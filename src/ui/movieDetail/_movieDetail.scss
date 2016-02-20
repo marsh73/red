@@ -1,0 +1,20 @@
+.movieDetail__container {
+  color: #c1bfbf;
+}
+.movieDetail__ratingBox {
+  @extend .movieListItem__ratingBox;
+  color: #c1bfbf;
+  border-color: #c1bfbf;
+  margin: 5px;
+}
+
+.movieDetail__title {
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.movieDetail--poster {
+  width: 35%;
+  float: right;
+  clear: right;
+}

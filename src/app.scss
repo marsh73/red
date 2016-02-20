@@ -1,0 +1,54 @@
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "./ui/searchBar/searchBar";
+@import "./ui/bannerAd/bannerAd";
+@import "./ui/movieList/movieList";
+@import "./ui/movieDetail/movieDetail";
+
+body,html {
+  height: 100%;
+  font-family: 'Roboto Regular';
+}
+
+.appContainer {
+  height: 100%;
+}
+
+.appTheme--dark {
+  background-color: #1b1919;
+  color: #c2bfbf;
+}
+
+.appContainer {
+  padding: 10px 5px;
+  height: 100%;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.shelf {
+  display: flex;
+}
+
+.spread {
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.stretch {
+  flex: 2;
+}
+
+
+.clickable {
+  cursor: pointer;
+}
